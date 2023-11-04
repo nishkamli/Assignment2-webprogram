@@ -1,0 +1,20 @@
+<!-- Main cards container -->
+<div class="cards-container">
+
+    <!-- Sample card template using Handlebars syntax -->
+    {{#each data}}
+    <div class="card {{#if (eq this.class 'UNKNOWN')}}highlight{{/if}}">
+        <div class="card-header">
+            {{this.Manufacturer}}
+        </div>
+        <div class="card-body">
+            <img src="{{this.image}}" alt="{{this.Manufacturer}}" width="200">
+            <p>Class: {{ classify this.class}}</p>
+            <p>Sales (in thousands): {{this.Sales_in_thousands}}</p>
+            <p>Year Resale Value: ${{this.__year_resale_value}}</p>
+            <p>Vehicle Type: {{this.Vehicle_type}}</p>
+            <p>Price: ${{this.Price_in_thousands}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>

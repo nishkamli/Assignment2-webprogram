@@ -1,0 +1,40 @@
+<h1>Invoice Details for {{item.InvoiceNo}}</h1>
+<table border="1">
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Invoice No</td>
+        <td>{{item.InvoiceNo}}</td>
+    </tr>
+    <tr>
+        <td>Image</td>
+        <td><img src="{{item.image}}" alt="Car Image" width="200px"></td>
+    </tr>
+    <tr>
+        <td>Manufacturer</td>
+        <td>{{item.Manufacturer}}</td>
+    </tr>
+    <tr>
+        <td>Class</td>
+        <td>{{item.class}}</td>
+    </tr>
+    <tr>
+        <td>Sales in Thousands</td>
+        <td>{{item.Sales_in_thousands}}</td>
+    </tr>
+    <tr>
+        <td>Year Resale Value</td>
+        <td>{{item.__year_resale_value}}</td>
+    </tr>
+    <tr>
+        <td>Vehicle Type</td>
+        <td>{{item.Vehicle_type}}</td>
+    </tr>
+    <tr>
+        <td>Price in Thousands</td>
+        <td>{{item.Price_in_thousands}}</td>
+    </tr>
+    <!-- You can continue in this format for all the other attributes -->
+</table>
